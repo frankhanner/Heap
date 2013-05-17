@@ -1,23 +1,22 @@
 ## Java Heap
 
 ### Overview
-This is a simple implementation of a Heap. This simply uses an ArrayList coupled with recursion.
+This is a implementation of a Heap in Java that uses an ArrayList coupled with recursion. 
 
 ### Why
-The main use for this tool is if you have to bootup or shutdown a network
-in a particular order (example shutdown sequence: workstations then servers then 
-domain controller then raids then switches). Simply ping each piece of hardware 
-and decide what needs to be done accordingly.
+Give insight to new users of Java who are trying to learn data structures.
 
 ### Use
-Since the method is static, simply use the following call where `host` is a string with
-the name or IP address of the machine you're trying to reach.
+First create a heap object:
 ```java
-Ping.isReachable(host);
+Heap h = new Heap();
 ```
-If the machine is reachable, it will return true; else it will return false.
 
-### How it works
-This tool executes the ping command piped with find. It basically parses out the 
-ping and looks for TTL. If TTL is present, we know the machine has been reached, else
-it is not reachable.
+Once the object has been instantiated, you can insert and delete:
+```java
+h.insert(TreeNode node);
+h.delete();
+h.printTree();
+```
+
+Deleting simply returns the max node.
