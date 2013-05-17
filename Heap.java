@@ -34,7 +34,7 @@ public class Heap {
 		return maxNode;
 	}
 
-	public void siftUp(int index) {
+	private void siftUp(int index) {
 		// if first node it's already at top
 		if (index == 0) {
 			return;
@@ -55,7 +55,7 @@ public class Heap {
 		}
 	}
 
-	public void siftDown(int index) {
+	private void siftDown(int index) {
 		// if only node, then it's already at bottom
 		if (this.size == 1) {
 			return;
