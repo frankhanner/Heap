@@ -1,5 +1,3 @@
-package ds;
-
 public class TreeNode {
 	private int value;
 	private TreeNode leftChild, rightChild;
