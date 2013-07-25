@@ -1,10 +1,10 @@
-import static org.junit.Assert.*;
+import static org.junit.Assert.;
 import org.junit.Before;
 import org.junit.Test;
 
 public class HeapTest {
 
-	Heap maxHeap;
+	private Heap maxHeap;
 
 	@Before
 	public void setUp() throws Exception {
